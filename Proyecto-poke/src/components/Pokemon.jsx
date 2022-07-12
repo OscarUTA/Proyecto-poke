@@ -1,10 +1,10 @@
 import React from "react";
-import Card from "./Card";
-import Pokeinfo from "./Pokeinfo";
+import Pokemons from "./Pokemons";
+import PokemonId from "./PokemonId";
 import axios from "axios";
 import { useState } from "react";
 import { useEffect } from "react";
-const Main=()=>{
+const Pokemon=()=>{
     const [pokeData,setPokeData]=useState([]);
     const [loading,setLoading]=useState(true);
     const [url,setUrl]=useState("https://pokeapi.co/api/v2/pokemon/")
@@ -38,7 +38,7 @@ const Main=()=>{
         <>
             <div className="container">
                 <div className="left-content">
-                    <Card pokemon={pokeData} loading={loading} infoPokemon={poke=>setPokeDex(poke)}/>
+                    <Pokemons pokemon={pokeData} loading={loading} infoPokemon={poke=>setPokeDex(poke)}/>
                     
                     <div className="btn-group">
                         {  prevUrl && <button onClick={()=>{
@@ -54,10 +54,10 @@ const Main=()=>{
                     </div>
                 </div>
                 <div className="right-content">
-                   <Pokeinfo data={pokeDex}/>
+                   <PokemonId data={pokeDex}/>
                 </div>
             </div>
         </>
     )
 }
-export default Main;
+export default Pokemon;

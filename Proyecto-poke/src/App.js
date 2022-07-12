@@ -6,14 +6,14 @@ import {
 } from "react-router-dom";
 
 import React from 'react';
-import HomePage from "./pages/HomePage";
-import AboutPage from "./pages/AboutPage";
-import UsersPage from "./pages/UsersPage";
+import MatriculaId  from "./pages/MatriculaId";
+import Carrera from "./pages/Carrera";
+import Nombre from "./pages/Nombre";
 import UserPage from "./pages/UserPage";
 import Matricula from "./components/Matricula";
 import DashboardPage from "./pages/DashboardPage";
 import NotFoundPage from "./pages/NotFoundPage";
-import Main from './components/Main';
+import Pokemon from './components/Pokemon';
 import './components/style.css'
 
 
@@ -27,10 +27,10 @@ export default function App() {
       <Matricula />
       
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
+        <Route path="/" element={<MatriculaId  />} />
+        <Route path="/about" element={<Carrera />} />
         <Route path="/users/*" element={<UserPage />} />
-        <Route path="/users" element={<UsersPage />} />
+        <Route path="/users" element={<Nombre />} />
         <Route path="/myusers/" element={<Navigate replace to="/users" />} />
         <Route path="/users/:id" element={<UserPage />} />
         <Route path="/dashboard/*" element={<DashboardPage />}>
@@ -39,7 +39,7 @@ export default function App() {
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <>
-      <Main/>
+      <Pokemon/>
     </>
   );
     </Router>

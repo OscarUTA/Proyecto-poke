@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 
-export default function UserPage() {
+export default function Nombre() {
   const params = useParams();
 
   return (

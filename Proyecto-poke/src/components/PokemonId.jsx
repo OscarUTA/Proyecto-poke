@@ -1,6 +1,6 @@
 import React from "react";
 
-const Pokeinfo = ({ data }) => {
+const PokemonId = ({ data }) => {
    
     return (
         <>
@@ -40,4 +40,4 @@ const Pokeinfo = ({ data }) => {
         </>
     )
 }
-export default Pokeinfo
+export default PokemonId
