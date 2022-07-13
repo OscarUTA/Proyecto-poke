@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import "./Matricula.css";
+import "./style.css";
 
 export default function Matricula() {
   return (
@@ -15,20 +15,31 @@ export default function Matricula() {
         </li>
         <li>
           <NavLink
-            to="/users"
+            to="/Matricula"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
-            Users
+            Matricula
           </NavLink>
         </li>
         <li>
           <NavLink
             className={({ isActive }) => (isActive ? "active" : "")}
-            to="/about"
+            to="/pokemons"
           >
-            About
+            Pokemons
           </NavLink>
+          
         </li>
+        <li>
+          <NavLink
+            className={({ isActive }) => (isActive ? "active" : "")}
+            to="/pokemon/:pokemonId"
+          >
+            :pokemonId
+          </NavLink>
+          
+        </li>
+
       </ul>
     </div>
   );

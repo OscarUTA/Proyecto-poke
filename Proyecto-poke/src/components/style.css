@@ -83,3 +83,42 @@ body{
     background-color: #b74555;
     border-radius: 8px;
 }
+
+
+.contenedor-alumno {
+    width: 1170px;
+    height: 368px;
+    margin: 10px 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff; 
+    box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);
+  }
+  .contenedor-alumno {
+    text-align: center;
+    padding: 40px;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    line-height: 1.5rem;
+  }
+  
+  .nombre-alumno {
+    font-size: 1.3rem;
+  }
+  
+  .cargo-alumno {
+    font-size: 1.3rem;
+    margin-top: 15px;
+    padding-bottom: 30px;
+  }
+  
+  .texto-alumno {
+    font-size: 1.1rem;
+    text-align: justify;
+  }
+  
+  .active {
+    color: red;
+    font-weight: bold;
+  }

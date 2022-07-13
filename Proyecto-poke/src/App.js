@@ -13,8 +13,7 @@ import UserPage from "./pages/UserPage";
 import Matricula from "./components/Matricula";
 import DashboardPage from "./pages/DashboardPage";
 import NotFoundPage from "./pages/NotFoundPage";
-import Pokemon from './components/Pokemon';
-import './components/style.css'
+
 
 
 export default function App() {
@@ -28,20 +27,18 @@ export default function App() {
       
       <Routes>
         <Route path="/" element={<MatriculaId  />} />
-        <Route path="/about" element={<Carrera />} />
-        <Route path="/users/*" element={<UserPage />} />
-        <Route path="/users" element={<Nombre />} />
-        <Route path="/myusers/" element={<Navigate replace to="/users" />} />
-        <Route path="/users/:id" element={<UserPage />} />
+        <Route path="/pokemons" element={<Carrera />} />
+        <Route path="/Matricula/*" element={<UserPage />} />
+        <Route path="/Matricula" element={<Nombre />} />
+        <Route path="/myusers/" element={<Navigate replace to="/Matricula" />} />
+        <Route path="/pokemon/:pokemonId" element={<UserPage />} />
         <Route path="/dashboard/*" element={<DashboardPage />}>
-          <Route path="welcome" element={<p>Welcome!</p>} />
+        <Route path="welcome" element={<p>Welcome!</p>} />
         </Route>
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
-      <>
-      <Pokemon/>
-    </>
-  );
+      
+  
     </Router>
 
     

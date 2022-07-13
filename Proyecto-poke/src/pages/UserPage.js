@@ -1,11 +1,20 @@
+import React from 'react'
+import PokemonUnic from '../components/PokemonUnic';
+import '../components/style.css'
 import { useParams } from "react-router-dom";
 
 export default function Nombre() {
   const params = useParams();
 
-  return (
-    <div>
-      User <h1>{params.id}</h1>
+  return ( <div>
+  <>
+        <PokemonUnic/>
+      </>
+  
+      
     </div>
   );
 }
+
+
+
